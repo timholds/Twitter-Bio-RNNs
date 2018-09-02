@@ -1,0 +1,10 @@
+python==3.5.0
+python-twitter==3.3
+torch=0.1.12
+scikit-learn==0.19.1
+TwitterAPI==2.3.4
+urllib3==1.22
+torchvision
+unidecode
+
+

@@ -1,6 +1,6 @@
 #AutoBio
 
-In this project, we generate Twitter Biographies using RNNs(Recurrent Neural Nets). 
+In this project, we generate Twitter Biographies using RNNs(Recurrent Neural Nets).
 Given any user ID, the code finds all of their friends, and the friends of all of their friends,
 then collects the bios of up to 10,000 of these users. We then use a RNN to learn the conditional
 probabilities between letters. Lastly, we use this RNN to generate new biographies that are 140 characters each.
@@ -10,7 +10,7 @@ probabilities between letters. Lastly, we use this RNN to generate new biographi
 
 ### Installing
 
-Download the code: `pip install -r requirements.txt` 
+Download the code: `pip install -r requirements.txt`
 Run the tests for the python-twitter package `***TEST CODE`
 
 
@@ -29,8 +29,8 @@ TWITTER_ACCESS_TOKEN_SECRET_PASS = 'STRING'
 1) Go to www.twitter.com and sign in
 2) Click your profile at the top right and go to `Settings and Privacy`
 3) Click on `Your Twitter Data`
-4) Enter your password and hit confirm 
-5) See the USER ID 
+4) Enter your password and hit confirm
+5) See the USER ID
 
 Pick two characters that you want the sentences to start with.
 We created examples when the first two letters are "Th" and "I "
@@ -59,7 +59,7 @@ TODO make sure it prints the right file names and that the next file can read it
 
 
 ## Training and Generating
-4) Train 
+4) Train
 Train a RNN on all the biographies by calling `train.py` and passing it `Bios.txt`
 
 ```
@@ -71,7 +71,7 @@ Saved as Bios.pt
 ```
 
 5) Generate
-After training the model will be saved as [filename].pt 
+After training the model will be saved as [filename].pt
 Now run `generate_bios.py` with that filename to generate some new bios.
 Also pass in two letters that each bio should start with. I recommend `Th` to start. You might want to think of other common
 beginnings to bios/sentences in general and pass in these two letters.

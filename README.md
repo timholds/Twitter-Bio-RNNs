@@ -1,12 +1,11 @@
-#AutoBio
+  # AutoBio
 
-In this project, we generate Twitter Biographies using RNNs(Recurrent Neural Nets).
-Given any user ID, the code finds all of their friends, and the friends of all of their friends,
-then collects the bios of up to 10,000 of these users. We then use a RNN to learn the conditional
-probabilities between letters. Lastly, we use this RNN to generate new biographies that are 140 characters each.
+In this project, we generate original Twitter Biographies using RNNs (recurrent neural nets).
+
+Given any user ID, the code finds all of their friends, and the friends of all of their friends, then collects the bios of up to 10,000 of these users. We then train the RNN on these bios and use the model to generate new biographies that are 140 characters each.
 
 
-# TODO limit the number of IDs in friends of friends
+### TODO limit the number of IDs in friends of friends
 
 ### Installing
 

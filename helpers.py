@@ -13,12 +13,14 @@ def read_file(filename):
     file = unidecode.unidecode(open(filename).read())
     return file, len(file)
 
+
 # Turning a string into a tensor
 def char_tensor(string):
     tensor = torch.zeros(len(string)).long()
     for c in range(len(string)):
         tensor[c] = all_characters.index(string[c])
     return Variable(tensor)
+
 
 # Readable time elapsed
 def time_since(since):
